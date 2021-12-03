@@ -1,0 +1,10 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.left-side,
+.right-side {
+  margin: 1em 0.5em;
+}
