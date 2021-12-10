@@ -63,7 +63,7 @@
 }
 .left-side-skills-hover-back {
   transform: rotateY(180deg);
-  background-color: #0072b5;
+  background-color: rgb(146, 168, 209);
   position: relative;
   top: 10px;
   margin: auto;

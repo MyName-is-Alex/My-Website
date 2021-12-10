@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+/*------BACK BUTTON------*/
+.back-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  height: 87vh;
+  width: 50px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+.back-button-container:hover {
+  transform: scale(1.025);
+}
+.back-button {
+  width: 35px;
+  height: 35px;
+  border-left: 8px solid rgba(80, 80, 80, 0.548);
+  border-bottom: 8px solid rgba(80, 80, 80, 0.548);
+  border-radius: 5px 0px 5px 0px;
+  transform: rotate(45deg) skew(20deg, 20deg) translate(0, -30%);
+}
+/*------BACK BUTTON end------*/
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+/*--------left-side---------*/
+.left-side {
+  width: 45vw;
+  height: 90vh;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.js-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.js-logo-container img {
+  width: 155px;
+  height: 155px;
+}
+.js-logo-description {
+  align-self: flex-end;
+}
+.js-logo-description {
+  font-size: 36px;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+/*--------left-side end---------*/
+
+/*--------right-side---------*/
+.right-side {
+  width: 45vw;
+  height: 90vh;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.react-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+.react-logo-container img {
+  width: 129px;
+  height: 149px;
+}
+.react-logo-text {
+  margin-left: 25px;
+  align-self: flex-end;
+}
+.react-logo-title {
+  font-size: 36px;
+  color: #00a2ff;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(77, 107, 120, 0.7);
+}
+.react-logo-description {
+  font-size: 36px;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+/*--------right-side end---------*/
+
+.container-projects-list {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+}
+.projects-list {
+  background-color: rgb(146, 168, 209);
+  width: 80%;
+  height: 100%;
+  align-self: center;
+  padding: 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.js-project h1,
+.react-project h1 {
+  font-size: 26px;
+}
+.projects-list p {
+  color: #000000;
+}
