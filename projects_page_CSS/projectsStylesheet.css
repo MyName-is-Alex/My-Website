@@ -129,24 +129,26 @@ body {
   border-right: 2px solid;
   border-bottom: 2px solid;
   border-image: linear-gradient(to left, #fdde35, rgba(0, 0, 0, 0)) 1;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
   cursor: pointer;
 }
 .js-project:hover {
   border-left: 2px solid;
   border-image: linear-gradient(to right, #14a2ff, rgba(0, 0, 0, 0)) 1;
+  transform: scale(1.01);
 }
 .react-project {
   padding: 0px 15px 15px 15px;
   border-left: 2px solid;
   border-bottom: 2px solid;
   border-image: linear-gradient(to right, #14a2ff, rgba(0, 0, 0, 0)) 1;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
   cursor: pointer;
 }
 .react-project:hover {
   border-right: 2px solid;
   border-image: linear-gradient(to left, #fdde35, rgba(0, 0, 0, 0)) 1;
+  transform: scale(1.01);
 }
 
 .js-project h1,
