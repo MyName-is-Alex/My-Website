@@ -80,4 +80,10 @@
   .left-side-skills-hover:hover .left-side-skills-hover-inner {
     transform: rotateY(180deg);
   }
+  .left-side-skills-hover-back {
+    display: none;
+  }
+  .left-side-profile-hover-back {
+    display: none;
+  }
 }
