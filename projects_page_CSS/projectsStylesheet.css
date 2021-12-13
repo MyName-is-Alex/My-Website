@@ -112,11 +112,10 @@ body {
   flex-direction: column;
 }
 .projects-list {
-  background-color: rgb(146, 168, 209);
   width: 80%;
   height: 100%;
   align-self: center;
-  padding: 40px;
+  padding: 20px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -124,10 +123,38 @@ body {
   position: relative;
 }
 
+.js-project {
+  padding: 0px 15px 15px 15px;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to left, #fdde35, rgba(0, 0, 0, 0)) 1;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.js-project:hover {
+  border-left: 2px solid;
+  border-image: linear-gradient(to right, #14a2ff, rgba(0, 0, 0, 0)) 1;
+}
+.react-project {
+  padding: 0px 15px 15px 15px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #14a2ff, rgba(0, 0, 0, 0)) 1;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.react-project:hover {
+  border-right: 2px solid;
+  border-image: linear-gradient(to left, #fdde35, rgba(0, 0, 0, 0)) 1;
+}
+
 .js-project h1,
 .react-project h1 {
+  padding-bottom: 5px;
   font-size: 26px;
 }
 .projects-list p {
+  font-size: 14px;
   color: #000000;
 }
