@@ -1,3 +1,5 @@
+@import url(projectDisplayOption.css);
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -122,8 +124,10 @@ body {
   justify-content: space-between;
   position: relative;
 }
-
 .js-project {
+  position: relative;
+}
+.js-project-container {
   padding: 0px 15px 15px 15px;
   border-left: 2px solid;
   border-right: 2px solid;
@@ -132,7 +136,7 @@ body {
   transition: all 0.2s ease-in;
   cursor: pointer;
 }
-.js-project:hover {
+.js-project-container:hover {
   border-left: 2px solid;
   border-image: linear-gradient(to right, #14a2ff, rgba(0, 0, 0, 0)) 1;
   transform: scale(1.01);
@@ -155,8 +159,40 @@ body {
 .react-project h1 {
   padding-bottom: 5px;
   font-size: 26px;
+  color: #494949;
 }
 .projects-list p {
   font-size: 14px;
-  color: #000000;
+  color: #494949;
+}
+
+@media all and (max-width: 1000px) {
+  body {
+    overflow: auto;
+  }
+  .back-button-container {
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .left-side,
+  .right-side {
+    width: 80vw;
+    height: fit-content;
+    padding: 20px 0;
+  }
+  .left-side {
+    margin-bottom: 40px;
+  }
+  .display-option {
+    display: flex;
+    flex-direction: column;
+  }
+  .js-project,
+  .react-project {
+    margin-bottom: 30px;
+  }
 }

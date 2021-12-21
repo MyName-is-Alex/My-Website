@@ -13,6 +13,10 @@
   margin: auto;
 }
 
+.social-media-icons #linkedin {
+  font-size: 34px;
+  margin: 0 10px;
+}
 .social-media-icons #pinterest,
 .social-media-icons #twitter {
   color: rgb(146, 145, 145);
