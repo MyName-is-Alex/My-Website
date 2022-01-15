@@ -8,6 +8,7 @@ let displayState = true;
 for (let i = 0; i < jsProjectContainer.length; i++) {
   function displayOptions() {
     jsProjectContainer[i].style.opacity = "0";
+    displayOptionContainer[i].style.display = "flex";
     displayOptionContainer[i].style.opacity = "1";
     displayOptionContainer[i].style.zIndex = "10";
     displayState = false;
