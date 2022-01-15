@@ -9,7 +9,6 @@ for (let i = 0; i < jsProjectContainer.length; i++) {
   function displayOptions() {
     jsProjectContainer[i].style.opacity = "0";
     jsProjectContainer[i].style.transitionDelay = "0ms";
-    displayOptionContainer[i].style.display = "flex";
     displayOptionContainer[i].style.transitionDelay = "300ms";
     displayOptionContainer[i].style.opacity = "1";
     displayOptionContainer[i].style.zIndex = "10";

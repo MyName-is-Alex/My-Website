@@ -128,16 +128,21 @@ body {
   position: relative;
 }
 .js-project-container {
+  opacity: 1;
   padding: 0px 15px 15px 15px;
+  transition: opacity 0.5s ease;
+  transition-delay: 300ms;
+  cursor: pointer;
+}
+.js-project-container-gradient {
   border-left: 2px solid;
   border-right: 2px solid;
   border-bottom: 2px solid;
   border-image: linear-gradient(to left, #fdde35, rgba(0, 0, 0, 0)) 1;
-  transition: opacity 0.5s ease;
-  transition-delay: 0ms;
-  cursor: pointer;
+  transition-property: border-left border-image transform;
+  transition: 0.3s ease;
 }
-.js-project-container:hover {
+.js-project-container-gradient:hover {
   border-left: 2px solid;
   border-image: linear-gradient(to right, #14a2ff, rgba(0, 0, 0, 0)) 1;
   transform: scale(1.01);
