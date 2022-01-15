@@ -133,7 +133,8 @@ body {
   border-right: 2px solid;
   border-bottom: 2px solid;
   border-image: linear-gradient(to left, #fdde35, rgba(0, 0, 0, 0)) 1;
-  transition: all 0.2s ease-in;
+  transition: opacity 0.5s ease;
+  transition-delay: 0ms;
   cursor: pointer;
 }
 .js-project-container:hover {

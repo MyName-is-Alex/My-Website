@@ -8,7 +8,8 @@ let displayState = true;
 for (let i = 0; i < jsProjectContainer.length; i++) {
   function displayOptions() {
     jsProjectContainer[i].style.opacity = "0";
-    displayOptionContainer[i].style.display = "flex";
+    jsProjectContainer[i].style.transitionDelay = "0ms";
+    displayOptionContainer[i].style.transitionDelay = "300ms";
     displayOptionContainer[i].style.opacity = "1";
     displayOptionContainer[i].style.zIndex = "10";
     displayState = false;
@@ -16,8 +17,10 @@ for (let i = 0; i < jsProjectContainer.length; i++) {
   jsProjectContainer[i].addEventListener("click", displayOptions);
   function displayProject() {
     jsProjectContainer[i].style.opacity = "1";
+    jsProjectContainer[i].style.transitionDelay = "300ms";
     displayOptionContainer[i].style.opacity = "0";
     displayOptionContainer[i].style.zIndex = "-10";
+    displayOptionContainer[i].style.transitionDelay = "0ms";
     displayState = true;
   }
   for (let y = 0; y < jsProjectContainer.length; y++) {
